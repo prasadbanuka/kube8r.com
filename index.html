@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kube8r | Cloud Migration &amp; Containerization Automation</title>
+
+    <!-- Googlefonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="./assets/img/favicon.ico">
+
+    <!-- Animated Icon script -->
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+
+    <!-- Form CSS -->
+    <link rel="stylesheet" href="./assets/css/animate.css">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+
+    <!-- navigation  -->
+    <nav id="navbar">
+        <div class="container">
+            <div class="nav">
+                <div id="logo"><a href="./"><img src="./assets/img/logo.png" alt="logo"></a></div>
+                <div id="menu" class="menu">
+                    <a href="#platform" onclick="closeNav()" class="active">Platform</a>
+                    <a href="#about" onclick="closeNav()">Company</a>
+                    <a href="#request-demo" onclick="closeNav()">Request Demo</a>
+                </div>
+                <div id="menuToggle" class="navbar-toggler closed" onclick="toggleMenu()">
+                    <div class="line line1"></div>
+                    <div class="line line2"></div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="container">
+            <div class="hero-text">
+                <h1>Automated Cloud Migration & Containerization</h1>
+            </div>
+        </div>
+    </section>
+
+    <!-- Video Section -->
+    <section id="platform" class="video-section black-bg">
+        <div class="container">
+            <div class="video-section-wrap">
+                <div class="video-wrap">
+                    <div class="img-wrap">
+                        <img src="./assets/img/video-image.png" alt="Thumbnail" class="thumbnail" id="triggerImage">
+                    </div>
+                    <div id="popupBox" class="popup">
+                        <span class="close popup-close-btn" id="closePopup">&times;</span>
+                        <div class="popup-content">
+                            <div class="popup-img-wrap">
+                                <img src="./assets/img/video-poster.jpeg" alt="" class="video-poster">
+                                <div class="play-button" onclick="playVideo()">
+                                    <svg xmlns="http://www.w3.org/2000/svg"
+                                        viewBox="0 0 384 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                                        <path
+                                            d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80L0 432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z" />
+                                    </svg>
+                                </div> <!-- Play icon (▶) -->
+                                <video id="popup-video" class="popup-video" controls>
+                                    <source src="./assets/video/what-is-kube8r.mp4" type="video/mp4">
+                                    Your browser does not support the video tag.
+                                </video>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="video-text-wrap">
+                    <p>
+                        A Platform That <span>Automates</span> The Migration of <span>Fully-Wired</span> Legacy
+                        Applications to the Cloud and Kubernetes in a <span>Secure</span>, and <span>Compliant</span>
+                        Manner
+                    </p>
+                    <div class="video-text-btn-wrap">
+                        <a href="#request-demo">Request Demo</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features-section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Features</h2>
+            </div>
+            <div class="features-grid-wrap">
+                <!-- Workload Discovery & Analysis -->
+                <div class="features-grid-iteam item1">
+                    <div class="features-icon">
+                        <img src="./assets/img/features-one.png" alt="">
+                    </div>
+                    <div class="features-text">
+                        <h3>Workload Discovery & Analysis</h3>
+                    </div>
+                </div>
+                <!-- CI/CD Integration -->
+                <div class="features-grid-iteam item2">
+                    <div class="features-icon">
+                        <img src="./assets/img/features-two.png" alt="">
+                    </div>
+                    <div class="features-text">
+                        <h3>CI/CD Integration</h3>
+                    </div>
+                </div>
+                <!-- Multi-Cloud Support -->
+                <div class="features-grid-iteam item3">
+                    <div class="features-icon">
+                        <img src="./assets/img/features-three.png" alt="">
+                    </div>
+                    <div class="features-text">
+                        <h3>Multi-Cloud Support</h3>
+                    </div>
+                </div>
+                <!-- Validation & Observability -->
+                <div class="features-grid-iteam item4">
+                    <div class="features-icon">
+                        <img src="./assets/img/features-four.png" alt="">
+                    </div>
+                    <div class="features-text">
+                        <h3>Validation & Observability</h3>
+                    </div>
+                </div>
+                <!-- Intuitive User Experience -->
+                <div class="features-grid-iteam item5">
+                    <div class="features-icon">
+                        <img src="./assets/img/features-five.png" alt="">
+                    </div>
+                    <div class="features-text">
+                        <h3>Intuitive User Experience</h3>
+                    </div>
+                </div>
+                <!-- Secure Data Migration -->
+                <div class="features-grid-iteam item6">
+                    <div class="features-icon">
+                        <img src="./assets/img/features-six.png" alt="">
+                    </div>
+                    <div class="features-text">
+                        <h3>Secure Data Migration</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Row Section -->
+    <section>
+        <!-- Secure & Compliant -->
+        <div class="black-bg">
+            <div class="container">
+                <div class="row-section-wrapper">
+                    <div class="row-icon">
+                        <lottie-player src="./assets/json/icon-one.json" background="transparent" speed="1"
+                            style="width: 150px; height: 150px;" loop="" autoplay=""></lottie-player>
+                    </div>
+                    <div class="row-text">
+                        <h4>Secure & Compliant</h4>
+                        <p>
+                            Ensure consistent security protocols and governance across multiple teams and clusters
+                            implementing best practices
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Automated -->
+        <div>
+            <div class="container">
+                <div class="row-section-wrapper">
+                    <div class="row-icon">
+                        <lottie-player src="./assets/json/icon-two.json" background="transparent" speed="1"
+                            style="width: 150px; height: 150px;" loop="" autoplay=""></lottie-player>
+                    </div>
+                    <div class="row-text">
+                        <h4>Automated</h4>
+                        <p>
+                            Automate your entire workload migration pipelines. Migrate production workloads on the cloud
+                            in weeks instead of months
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Cost-Effective -->
+        <div class="black-bg">
+            <div class="container">
+                <div class="row-section-wrapper">
+                    <div class="row-icon">
+                        <lottie-player src="./assets/json/icon-three.json" background="transparent" speed="1"
+                            style="width: 150px; height: 150px;" loop="" autoplay=""></lottie-player>
+                    </div>
+                    <div class="row-text">
+                        <h4>Cost-Effective</h4>
+                        <p>
+                            60-80% Reduction of TCO
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Fully-Wired -->
+        <div>
+            <div class="container">
+                <div class="row-section-wrapper">
+                    <div class="row-icon">
+                        <lottie-player src="./assets/json/icon-four.json" background="transparent" speed="1"
+                            style="width: 150px; height: 150px;" loop="" autoplay=""></lottie-player>
+                    </div>
+                    <div class="row-text">
+                        <h4>Fully-Wired</h4>
+                        <p>
+                            The migrated workloads are fully wired & validated
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section black-bg">
+        <div class="container">
+            <div class="section-top-img">
+                <div class="img-wrap">
+                    <img src="./assets/img/logo-image.png" alt="">
+                </div>
+            </div>
+            <div class="section-title">
+                <h2>About Us</h2>
+            </div>
+            <div class="about-grid-wrapper">
+                <div class="about-grid-iteam">
+                    <p>
+                        As Cloud Migrations continue to grow at a feverish pace Kube8r can make the difference between a
+                        “Dark Cloud” and a “Cloud with a Silver Lining” for your Enterprise
+                    </p>
+                </div>
+                <div class="about-grid-iteam">
+                    <p>
+                        Kube8r is a Bay Area startup that has recently emerged from stealth mode. The birth of Kuber8r
+                        is a result of the founders’ spending several years coming face-to-face with challenges like
+                        strategy, financial cost, security and resource constraints that are involved in a typical Cloud
+                        & Data Migration project
+                    </p>
+                </div>
+                <div class="about-grid-iteam">
+                    <p>
+                        The USP of Kube8r is a “fully-wired” target state application in a multi-cloud, containerized
+                        environment with a substantial reduction in TCO
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Request Demo -->
+    <div class="container">
+        <div id="request-demo" class="contact-form-outer"
+            style="max-width: 1100px; margin-left: auto; margin-right: auto;">
+            <div class="section-title">
+                <h2>Request Demo</h2>
+            </div>
+            <!-- Contact Form  Starts  -->
+            <form role="form" id="contactForm" class="contact-form" data-toggle="validator" class="shake">
+                <label for="name" style="font-size: 1rem;">Name <span>(required)</span></label>
+                <!-- Name -->
+                <div class="name-label-wrap form-name-row">
+                    <div class="form-group">
+                        <!-- First Name -->
+                        <div class="controls">
+                            <label for="fname">First Name</label><br>
+                            <input type="text" id="fname" name="fname" class="form-control" required
+                                    data-error="Please enter your first name">
+                            <div class="help-block with-errors"></div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                         <!-- Last Name -->
+                        <div class="controls">
+                            <label for="lname">Last Name</label><br>
+                            <input type="text" id="lname" name="lname" class="form-control" required
+                                data-error="Please enter your last name">
+                            <div class="help-block with-errors"></div>
+                        </div>
+                    </div>
+          
+                   
+                </div>
+
+                <!-- Email -->
+                <div class="form-group">
+                    <div class="controls">
+                        <label for="email">Email <span>(required)</span></label><br>
+                        <input type="email" class="email form-control" id="email" required
+                            data-error="Please enter your email">
+                        <div class="help-block with-errors"></div>
+                    </div>
+                </div>
+
+                <!-- Company -->
+                <div class="form-group">
+                    <div class="controls">
+                        <label for="company">Company <span>(required)</span></label><br>
+                        <input type="text" class="company" id="company" required data-error="Please enter your company">
+                        <div class="help-block with-errors"></div>
+                    </div>
+                </div>
+
+                <!-- Phone -->
+                <div class="form-group">
+                    <div class="controls">
+                        <label for="company">Phone <span>(required)</span></label><br>
+                        <input type="text" id="phone" class="form-control" required
+                            data-error="Please enter your telephone number" pattern="^[0-9]*">
+                        <div class="help-block with-errors"></div>
+                    </div>
+                </div>
+
+                <!-- Message -->
+                <div class="form-group">
+                    <div class="controls">
+                        <label for="company">Message <span>(required)</span></label><br>
+                        <textarea id="message" rows="7" class="form-control" required
+                            data-error="Write your message"></textarea>
+                        <div class="help-block with-errors"></div>
+                    </div>
+                </div>
+
+                <!-- Send Button -->
+                <button type="submit" id="submit" class="submit-btn btn btn-success"></i> Send </button>
+                <div id="msgSubmit" class="h3 text-center hidden"></div>
+                <div class="clearfix"></div>
+
+            </form>
+            <br />
+            <!-- Contact Form Ends -->
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="black-bg">
+        <div class="footer-content-wrap">
+            <div class="img-wrap">
+                <img src="./assets/img/logo-image.png" alt="">
+            </div>
+            <p>Kube8r Inc.</p>
+        </div>
+    </footer>
+
+    <!-- Form Scripts -->
+    <script src="./assets/js/jquery-min.js"></script>
+    <script src="./assets/js/form-validator.min.js"></script>
+    <script src="./assets/js/contact-form-script.js"></script>
+
+    <!-- Main Script -->
+    <script src="./assets/js/main.js"></script>
+
+</body>
+
+</html>
